@@ -1,6 +1,35 @@
+{
+    "start" : {
+        "text" : "Bring the chicken to room temperature and pat dry with a paper towel",
+        "route" : [
+            {
+                "key" : "1",
+                "text" : "Brought the chicken to room temperature"
+            },
+            {
+                "key" : "2",
+                "text" : "I brought the chicken to room temperature and pat dried with a paper towel"
+            }
+        ]
+    },
+    "1" : {
+        "text" : "Pat dry the chicken with paper towel",
+        "route" : [
+            {
+                "key" : "3",
+                "text" : "Pat dried the chicken with a paper towel"
+            },
+            {
+                "key" : "4",
+                "text" : "With a paper towel I pat dried the chicken"
+            }
+        ]
+    }
+}
+
 [
     {
-        "text" : "Bring the chicken to room temperature and pat dry with a paper towel"
+        
     },
     {
         "text" : "Mix 1 teaspoon of kosher salt to a bowl, 1 teaspoon of garlic powder, 1 teaspoon of smoked paprika, 1 spoon of onion powder, half teaspoon of ground black pepper in a bowl for dry rub"
