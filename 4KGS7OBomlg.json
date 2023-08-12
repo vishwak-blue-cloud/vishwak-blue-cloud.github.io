@@ -91,7 +91,7 @@
         ]
     },
     "7" : {
-        "text" : "Cook the chicken for 15 minutes"
+        "text" : "Cook the chicken for 15 minutes",
         "route" : [
             {
                 "key" : "end",
@@ -104,7 +104,7 @@
         ]
     },
     "8" : {
-        "text" : "Did you cook the chicken for 15 minutes?"
+        "text" : "Did you cook the chicken for 15 minutes?",
         "route" : [
             {
                 "key" : "end",
