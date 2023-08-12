@@ -16,32 +16,79 @@
         "text" : "Pat dry the chicken with paper towel",
         "route" : [
             {
-                "key" : "3",
+                "key" : "2",
                 "text" : "Pat dried the chicken with a paper towel"
             },
             {
-                "key" : "4",
+                "key" : "2",
                 "text" : "With a paper towel I pat dried the chicken"
             }
         ]
-    }
+    },
+    "2" : {
+        "text" : "Mix 1 teaspoon of kosher salt to a bowl, 1 teaspoon of garlic powder, 1 teaspoon of smoked paprika, 1 spoon of onion powder, half teaspoon of ground black pepper in a bowl",
+        "route" : [
+            {
+                "key" : "3",
+                "text" : "I mixed all the ingredients"
+            },
+            {
+                "key" : "4",
+                "text" : "In a bowl I mixed 1 teaspoon of kosher salt to a bowl, 1 teaspoon of garlic powder, 1 teaspoon of smoked paprika, 1 spoon of onion powder, half teaspoon of ground black pepper"
+            }
+        ]
+    },
+    "3" : {
+        "text" : "Did you mix 1 teaspoon of kosher salt to a bowl, 1 teaspoon of garlic powder, 1 teaspoon of smoked paprika, 1 spoon of onion powder, half teaspoon of ground black pepper in a bowl?",
+        "route" : [
+            {
+                "key" : "4",
+                "text" : "Yes"
+            },
+            {
+                "key" : "2",
+                "text" : "No"
+            }
+        ]
+    },
+    "4" : {
+        "text" : "Sprinkle the mixture all over the chicken",
+        "route" : [
+            {
+                "key" : "5",
+                "text" : "Sprinkled the mixture"
+            },
+            {
+                "key" : "6",
+                "text" : "I sprinkled the mixture all over the chicken"
+            }
+        ]
+    },
+    "5" : {
+        "text" : "Did you sprinkle the mixture all over the chicken?",
+        "route" : [
+            {
+                "key" : "4",
+                "text" : "Nope"
+            },
+            {
+                "key" : "6",
+                "text" : "Yeah"
+            }
+        ]
+    },
+    "6" : {
+        "text" : "Cook the chicken in the grill for 35 minutes",
+        "route" : [
+            {
+                "key" : "end",
+                "text" : "In the grill I cooked the chicken for 35 minutes"
+            },
+            {
+                "key" : "7",
+                "text" : "Cooked the chicken in a grill for 20 minutes"
+            }
+        ]
+    }   
 }
-
-[
-    {
-        
-    },
-    {
-        "text" : "Mix 1 teaspoon of kosher salt to a bowl, 1 teaspoon of garlic powder, 1 teaspoon of smoked paprika, 1 spoon of onion powder, half teaspoon of ground black pepper in a bowl for dry rub"
-    },
-    {
-        "text" : "Sprinkle the mixture all over the chicken"
-    },
-    {
-        "text" : "Rub the mixture generously on the top of chicken"
-    },
-    {
-        "text" : "Cook the chicken in the grill for 35 minutes"
-    }
-]
 
