@@ -81,7 +81,7 @@
         "text" : "Cook the chicken in the grill for 35 minutes",
         "route" : [
             {
-                "key" : "end",
+                "key" : "9",
                 "text" : "In the grill I cooked the chicken for 35 minutes"
             },
             {
@@ -94,7 +94,7 @@
         "text" : "Cook the chicken for 15 minutes",
         "route" : [
             {
-                "key" : "end",
+                "key" : "9",
                 "text" : "Cooked the chicken for 15 minutes"
             },
             {
@@ -107,7 +107,7 @@
         "text" : "Did you cook the chicken for 15 minutes?",
         "route" : [
             {
-                "key" : "end",
+                "key" : "9",
                 "text" : "Yeah, I cooked for 15 minutes"
             },
             {
@@ -116,7 +116,7 @@
             }
         ]
     },
-    "end" : {
+    "9" : {
         "text" : "The recipe has been completed.",
         "route" : []
     }
