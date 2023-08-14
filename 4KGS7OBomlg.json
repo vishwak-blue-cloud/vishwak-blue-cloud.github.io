@@ -1,6 +1,6 @@
 {
     "start" : {
-        "instruction" : "1 / 4",
+        "instruction" : "Drying - 1 / 4",
         "text" : "Bring the chicken to room temperature and pat dry with a paper towel",
         "route" : [
             {
@@ -18,7 +18,7 @@
         ]
     },
     "1" : {
-        "instruction" : "1 / 4",
+        "instruction" : "Drying - 1 / 4",
         "text" : "Pat dry the chicken with paper towel",
         "route" : [
             {
@@ -32,7 +32,7 @@
         ]
     },
     "2" : {
-        "instruction" : "2 / 4",
+        "instruction" : "Mixing - 2 / 4",
         "text" : "Mix 1 teaspoon of kosher salt to a bowl, 1 teaspoon of garlic powder, 1 teaspoon of smoked paprika, 1 spoon of onion powder, half teaspoon of ground black pepper in a bowl",
         "route" : [
             {
@@ -50,7 +50,7 @@
         ]
     },
     "3" : {
-        "instruction" : "2 / 4",
+        "instruction" : "Mixing - 2 / 4",
         "text" : "Did you mix 1 teaspoon of kosher salt to a bowl, 1 teaspoon of garlic powder, 1 teaspoon of smoked paprika, 1 spoon of onion powder, half teaspoon of ground black pepper in a bowl?",
         "route" : [
             {
@@ -64,7 +64,7 @@
         ]
     },
     "4" : {
-        "instruction" : "3 / 4",
+        "instruction" : "Sprinkling - 3 / 4",
         "text" : "Sprinkle the mixture all over the chicken",
         "route" : [
             {
@@ -82,7 +82,7 @@
         ]
     },
     "5" : {
-        "instruction" : "3 / 4",
+        "instruction" : "Sprinkling - 3 / 4",
         "text" : "Did you sprinkle the mixture all over the chicken?",
         "route" : [
             {
@@ -96,7 +96,7 @@
         ]
     },
     "6" : {
-        "instruction" : "4 / 4",
+        "instruction" : "Grilling - 4 / 4",
         "text" : "Cook the chicken in the grill for 35 minutes",
         "route" : [
             {
@@ -114,7 +114,7 @@
         ]
     },
     "7" : {
-        "instruction" : "4 / 4",
+        "instruction" : "Grilling - 4 / 4",
         "text" : "Cook the chicken for 15 minutes",
         "route" : [
             {
@@ -128,7 +128,7 @@
         ]
     },
     "8" : {
-        "instruction" : "4 / 4",
+        "instruction" : "Grilling - 4 / 4",
         "text" : "Did you cook the chicken for 15 minutes?",
         "route" : [
             {
@@ -142,7 +142,7 @@
         ]
     },
     "9" : {
-        "instruction" : "4 / 4",
+        "instruction" : "Grilling - 4 / 4",
         "text" : "The recipe has been completed.",
         "route" : []
     }
