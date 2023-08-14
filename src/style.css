@@ -1,0 +1,167 @@
+body{
+    background-color: #444654;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background-color: #343541;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 0 20px;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.subtitle{
+    padding: 0 20px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+p{
+    color: white;
+    line-height: 2;
+}
+
+li{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.pad{
+    padding: 0 20px;
+}
+
+input[type=text]{
+    width: 98%;
+    padding: 15 20px;
+    box-sizing: border-box;
+    outline: none;
+    color: white;
+    background-color: #40414f;
+    border: 1px solid #40414f;
+    border-radius: 10px;
+}
+
+hr{
+    outline: none;
+    color: 1px solid red;
+}
+
+.thinline{
+    height: 1px; 
+    background-color: #444654;
+    
+}
+
+.error{
+    width: 98%;
+    padding: 15 20px;
+    box-sizing: border-box;
+    outline: none;
+    color: red;
+    border: 1px solid #564651;
+    background-color: #564651;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.cell{
+    width: 98%;
+    padding: 5 20px;
+    box-sizing: border-box;
+    outline: none;
+    color: white;
+    background-color: #40414f;
+    border: 1px solid #40414f;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.msg{
+    width: 98%;
+    padding: 3 20px;
+    box-sizing: border-box;
+    outline: none;
+    color: white;
+    background-color: #40414f;
+    border: 1px solid #40414f;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.shortMsg{
+    padding: 10 10px;
+    box-sizing: border-box;
+    outline: none;
+    color: white;
+    background-color: #343541;
+    border: 1px solid #343541;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+mark{ 
+    background-color: #9d00af;
+    color: #ffffff;
+    border-radius: 3px;
+    padding: 5 5px;
+}
+
+.markMessageOne{ 
+    background-color: #00d37a;
+    color: #ffffff;
+    border-radius: 3px;
+    padding: 5 5px;
+}
+
+.markMessageTwo{ 
+    background-color: #9d00af;
+    color: #ffffff;
+    border-radius: 3px;
+    padding: 5 5px;
+}
+
+.navFix{
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+}
+
+.route{
+    padding: 5 5px;
+    color: #ffffff;
+    background-color: #40414f;
+    width: 98%;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.main{
+    float: left;
+    clear: none;
+}
+
+.padLeft{
+    padding-left: 20px;
+}
+
+.padRight{
+    padding-right: 20px;
+}
