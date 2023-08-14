@@ -1,1 +1,0 @@
-const recipesApi = "https://vishwak-blue-cloud.github.io/recipes.json";
