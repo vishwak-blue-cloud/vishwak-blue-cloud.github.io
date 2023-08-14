@@ -10,6 +10,10 @@
             {
                 "key" : "2",
                 "text" : "I brought the chicken to room temperature and pat dried with a paper towel"
+            },
+            {
+                "key" : "start",
+                "text" : "Repeat the instruction"
             }
         ]
     },
@@ -38,6 +42,10 @@
             {
                 "key" : "4",
                 "text" : "In a bowl I mixed 1 teaspoon of kosher salt to a bowl, 1 teaspoon of garlic powder, 1 teaspoon of smoked paprika, 1 spoon of onion powder, half teaspoon of ground black pepper"
+            },
+            {
+                "key" : "2",
+                "text" : "Repeat the instruction"
             }
         ]
     },
@@ -66,6 +74,10 @@
             {
                 "key" : "6",
                 "text" : "I sprinkled the mixture all over the chicken"
+            },
+            {
+                "key" : "4",
+                "text" : "Repeat the instruction"
             }
         ]
     },
@@ -94,6 +106,10 @@
             {
                 "key" : "7",
                 "text" : "Cooked the chicken in a grill for 20 minutes"
+            },
+            {
+                "key" : "6",
+                "text" : "Repeat the instruction"
             }
         ]
     },
