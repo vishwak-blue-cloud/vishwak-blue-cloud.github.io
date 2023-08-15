@@ -1,7 +1,7 @@
 [
     {
         "no" : 0,
-        "title" : "Drying",
+        "title" : "Drying - 1 / 4",
         "instruction" : "Bring the chicken to the room temperature and pat dried the chicken with a paper towel",
         "try" : [
             "I brought the chicken to the room temperature and pat dried it with a paper towel",
@@ -10,7 +10,7 @@
     },
     {
         "no" : 1,
-        "title" : "Mixing",
+        "title" : "Mixing - 2 / 4",
         "instruction" : "Mix 1 teaspoon of kosher salt, 1 teaspoon of garlic powder, 1 teaspoon of smoked paprika, 1 spoon of onion powder, half teaspoon of ground black pepper in a bowl",
         "try" : [
             "I mixed 1 teaspoon of kosher salt, 1 teaspoon of garlic powder, 1 teaspoon of smoked paprika, 1 spoon of onion powder, half teaspoon of ground black pepper in a bowl",
@@ -19,7 +19,7 @@
     },
     {
         "no" : 2,
-        "title" : "Sprinkling",
+        "title" : "Sprinkling - 3 / 4",
         "instruction" : "Sprinkle the mixture all over the chicken",
         "try" : [
             "I sprinkled the mixture all over the chicken",
@@ -28,7 +28,7 @@
     },
     {
         "no" : 3,
-        "title" : "Grilling",
+        "title" : "Grilling - 4 / 4",
         "instruction" : "Cook the chicken in the grill for 35 minutes",
         "try" : [
             "Cooked the chicken in the grill for 35 minutes",
