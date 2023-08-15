@@ -1,150 +1,38 @@
-{
-    "start" : {
-        "instruction" : "Drying - 1 / 4",
-        "text" : "Bring the chicken to room temperature and pat dry with a paper towel",
-        "route" : [
-            {
-                "key" : "1",
-                "text" : "Brought the chicken to room temperature"
-            },
-            {
-                "key" : "2",
-                "text" : "I brought the chicken to room temperature and pat dried with a paper towel"
-            },
-            {
-                "key" : "start",
-                "text" : "Repeat the instruction"
-            }
+[
+    {
+        "no" : 1,
+        "title" : "Drying",
+        "instruction" : "Bring the chicken to the room temperature and pat dried the chicken with a paper towel",
+        "try" : [
+            "I brought the chicken to the room temperature and pat dried it with a paper towel",
+            "Brought the chicken to room temperature and with a paper towel I pat dried the chicken"
         ]
     },
-    "1" : {
-        "instruction" : "Drying - 1 / 4",
-        "text" : "Pat dry the chicken with paper towel",
-        "route" : [
-            {
-                "key" : "2",
-                "text" : "Pat dried the chicken with a paper towel"
-            },
-            {
-                "key" : "2",
-                "text" : "With a paper towel I pat dried the chicken"
-            }
+    {
+        "no" : 2,
+        "title" : "Mixing",
+        "instruction" : "Mix 1 teaspoon of kosher salt, 1 teaspoon of garlic powder, 1 teaspoon of smoked paprika, 1 spoon of onion powder, half teaspoon of ground black pepper in a bowl",
+        "try" : [
+            "I mixed 1 teaspoon of kosher salt, 1 teaspoon of garlic powder, 1 teaspoon of smoked paprika, 1 spoon of onion powder, half teaspoon of ground black pepper in a bowl",
+            "Mixed 1 teaspoon of kosher salt, 1 teaspoon of garlic powder, 1 teaspoon of smoked paprika, 1 spoon of onion powder, half teaspoon of ground black pepper in a bowl"
         ]
     },
-    "2" : {
-        "instruction" : "Mixing - 2 / 4",
-        "text" : "Mix 1 teaspoon of kosher salt to a bowl, 1 teaspoon of garlic powder, 1 teaspoon of smoked paprika, 1 spoon of onion powder, half teaspoon of ground black pepper in a bowl",
-        "route" : [
-            {
-                "key" : "3",
-                "text" : "I mixed all the ingredients"
-            },
-            {
-                "key" : "4",
-                "text" : "In a bowl I mixed 1 teaspoon of kosher salt to a bowl, 1 teaspoon of garlic powder, 1 teaspoon of smoked paprika, 1 spoon of onion powder, half teaspoon of ground black pepper"
-            },
-            {
-                "key" : "2",
-                "text" : "Repeat the instruction"
-            }
+    {
+        "no" : 3,
+        "title" : "Sprinkling",
+        "instruction" : "Sprinkle the mixture all over the chicken",
+        "try" : [
+            "I sprinkled the mixture all over the chicken",
+            "Sprinkled the mixture all over the chicken"
         ]
     },
-    "3" : {
-        "instruction" : "Mixing - 2 / 4",
-        "text" : "Did you mix 1 teaspoon of kosher salt to a bowl, 1 teaspoon of garlic powder, 1 teaspoon of smoked paprika, 1 spoon of onion powder, half teaspoon of ground black pepper in a bowl?",
-        "route" : [
-            {
-                "key" : "4",
-                "text" : "Yes"
-            },
-            {
-                "key" : "2",
-                "text" : "No"
-            }
+    {
+        "no" : 4,
+        "title" : "Grilling",
+        "instruction" : "Cook the chicken in the grill for 35 minutes",
+        "try" : [
+            "Cooked the chicken in the grill for 35 minutes",
+            "In the grill I cooked the chicken for 35 minutes"
         ]
-    },
-    "4" : {
-        "instruction" : "Sprinkling - 3 / 4",
-        "text" : "Sprinkle the mixture all over the chicken",
-        "route" : [
-            {
-                "key" : "5",
-                "text" : "Sprinkled the mixture"
-            },
-            {
-                "key" : "6",
-                "text" : "I sprinkled the mixture all over the chicken"
-            },
-            {
-                "key" : "4",
-                "text" : "Repeat the instruction"
-            }
-        ]
-    },
-    "5" : {
-        "instruction" : "Sprinkling - 3 / 4",
-        "text" : "Did you sprinkle the mixture all over the chicken?",
-        "route" : [
-            {
-                "key" : "4",
-                "text" : "Nope"
-            },
-            {
-                "key" : "6",
-                "text" : "Yeah"
-            }
-        ]
-    },
-    "6" : {
-        "instruction" : "Grilling - 4 / 4",
-        "text" : "Cook the chicken in the grill for 35 minutes",
-        "route" : [
-            {
-                "key" : "9",
-                "text" : "In the grill I cooked the chicken for 35 minutes"
-            },
-            {
-                "key" : "7",
-                "text" : "Cooked the chicken in a grill for 20 minutes"
-            },
-            {
-                "key" : "6",
-                "text" : "Repeat the instruction"
-            }
-        ]
-    },
-    "7" : {
-        "instruction" : "Grilling - 4 / 4",
-        "text" : "Cook the chicken for 15 minutes",
-        "route" : [
-            {
-                "key" : "9",
-                "text" : "Cooked the chicken for 15 minutes"
-            },
-            {
-                "key" : "8",
-                "text" : "Cooked the chicken in the grill"
-            }
-        ]
-    },
-    "8" : {
-        "instruction" : "Grilling - 4 / 4",
-        "text" : "Did you cook the chicken for 15 minutes?",
-        "route" : [
-            {
-                "key" : "9",
-                "text" : "Yeah, I cooked for 15 minutes"
-            },
-            {
-                "key" : "7",
-                "text" : "Nope"
-            }
-        ]
-    },
-    "9" : {
-        "instruction" : "Grilling - 4 / 4",
-        "text" : "The recipe has been completed.",
-        "route" : []
     }
-}
-
+]
