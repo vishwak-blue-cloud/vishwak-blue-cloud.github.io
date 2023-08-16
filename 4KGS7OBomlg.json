@@ -1,22 +1,22 @@
 [
     {
         "no" : 0,
-        "title" : "Drying - 1 / 4",
-        "instruction" : "Bring the chicken to the room temperature and pat dry the chicken with a paper towel"
+        "instruction" : "Bring the chicken to the room temperature and pat dry the chicken with a paper towel",
+        "video" : "https://yt-audio-bucket.s3.amazonaws.com/vid-0.mp4"
     },
     {
         "no" : 1,
-        "title" : "Mixing - 2 / 4",
-        "instruction" : "Mix 1 teaspoon of kosher salt, 1 teaspoon of garlic powder, 1 teaspoon of smoked paprika, 1 spoon of onion powder, half teaspoon of ground black pepper"
+        "instruction" : "Mix 1 teaspoon of kosher salt, 1 teaspoon of garlic powder, 1 teaspoon of smoked paprika, 1 spoon of onion powder, half teaspoon of ground black pepper",
+        "video" : "https://yt-audio-bucket.s3.amazonaws.com/vid-1.mp4"
     },
     {
         "no" : 2,
-        "title" : "Sprinkling - 3 / 4",
-        "instruction" : "Sprinkle the mixture all over the chicken"
+        "instruction" : "Sprinkle the mixture all over the chicken",
+        "video" : "https://yt-audio-bucket.s3.amazonaws.com/vid-2.mp4"
     },
     {
         "no" : 3,
-        "title" : "Grilling - 4 / 4",
-        "instruction" : "Cook the chicken in the grill for 35 minutes"
+        "instruction" : "Cook the chicken in the grill for 35 minutes",
+        "video" : "https://yt-audio-bucket.s3.amazonaws.com/vid-3.mp4"
     }
 ]
