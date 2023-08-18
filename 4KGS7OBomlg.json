@@ -1,128 +1,87 @@
 {
-    "start" : {
-        "instruction" : "Bring the chicken to the room temperature",
-        "askAfter" : 500,
-        "question" : "Did you brought the chicken to the room temperature?",
-        "route" : {
-            "complete" : {
-                "goto" : "1",
-                "key" : "instruction"
-            },
-            "partial" : {
-                "goto" : "start",
-                "key" : "question"
-            },
-            "else" : {
-                "goto" : "start",
-                "key" : "instruction"
-            }
-        },
-        "refer" : {}
+    "user" : {
+        "currentInput" : "<Here comes the current input of the user>",
+        "currentInputType" : "<Here comes the current input type[record, timer, play, confirm, query]>",
+        "currentLocation" : "<Here comes the current location of the user>"
     },
-    "1" : {
-        "instruction" : "Pat dry the chicken with a paper towel",
-        "askAfter" : 700,
-        "question" : "Did you pat dried the chicken with a paper towel?",
-        "route" : {
-            "complete" : {
-                "goto" : "2",
-                "key" : "instruction"
-            },
-            "partial" : {
-                "goto" : "1",
-                "key" : "question"
-            },
-            "else" : {
-                "goto" : "1",
-                "key" : "instruction"
-            }
-        },
-        "refer" : {} 
+    "timerSource" : {
+        "start" : 300
     },
-    "2" : {
-        "instruction" : "Mix all the spices in a bowl",
-        "askAfter" : 200,
-        "question" : "Did you mix all the spices in a bowl?",
-        "route" : {
-            "done" : {
-                "goto" : "3",
-                "key" : "instruction"
-            },
-            "partial" :{
-                "goto" : "2",
-                "key" : "question" 
-            },
-            "else" : {
-                "goto" : "2",
-                "key" : "instruction"
-            }
-        },
-        "refer" : {
-            "goto" : "reference",
-            "key" : "spices"
-        }
+    "videoSource" : {
+        "start" : "/here/comes/the/source.mp4"
     },
-    "3" : {
-        "instruction" : "Sprinkle the spices mixture on the chicken",
-        "askAfter" : 500,
-        "question" : "Did you sprinkled the spices mixture on the chicken?",
-        "route" : {
-            "done" : {
-                "goto" : "4",
-                "key" : "instruction"
-            },
-            "partial" : {
-                "goto" : "3",
-                "key" : "question"
-            },
-            "else" : {
-                "goto" : "3",
-                "key" : "instruction"
-            }
-        },
-        "refer" : {}
+    "instructionSource" : {
+        "start" : "Deep fry the potatoes for 5 minutes"
     },
-    "4" : {
-        "instruction" : "Cook the chicken in the grill for 35 minutes",
-        "askAfter" : 1200,
-        "question" : "Did you cook the chicken in the grill for 35 minutes?",
-        "route" : {
-            "done" : {
-                "goto" : "end",
-                "key" : "message"
-            },
-            "partial" : {
-                "goto" : "4",
-                "key" : "question"
-            },
-            "else" : {
-                "goto" : "4",
-                "key" : "instruction"
-            }
-        },
-        "refer" : {}
-    },
-    "end" : {
-        "message" : "The recipe has been successfully completed"
-    },
-    "reference" : {
-        "spices" : [
-            {
-                "no" : 1,
-                "text" : "1 spoon of kosher salt"
-            },
-            {
-                "no" : 2,
-                "text" : "1 spoon of black pepper"
-            },
-            {
-                "no" : 3,
-                "text" : "1 spoon of onion powder"
-            },
-            {
-                "no" : 4,
-                "text" : "1 spoon of red chillie powder"
-            }
+    "destinationSource" : {
+        "start" : [
+            "1"
         ]
+    },
+    "start" : {
+        "actions" : {
+            "goto" : {
+                "inputs" : [
+                    {
+                        "to" : "destinationSource",
+                        "key" : "start"
+                    }
+                ],
+                "perform" : "gotoInstruction"
+            },
+            "query" : {
+                "inputs" : [
+                    {
+                        "to" : "user",
+                        "key" : "currentInput"
+                    },
+                    {
+                        "to" : "instructionSource",
+                        "key" : "start"
+                    }
+                ],
+                "perform" : "queryInstruction"
+            },
+            "record" : {
+                "inputs" : [
+                    {
+                        "to" : "user",
+                        "key" : "currentInput"
+                    }
+                ],
+                "perform" : "recordLog"
+            },
+            "timer" : {
+                "inputs" : [
+                    {
+                        "to" : "timerSource",
+                        "key" : "start"
+                    }
+                ],
+                "perform" : "startTimer"
+            },
+            "play" : {
+                "inputs" : [
+                    {
+                        "to" : "videoSource",
+                        "key" : "start"
+                    }
+                ],
+                "perform" : "playVideo"
+            },
+            "confirm" : {
+                "inputs" : [
+                    {
+                        "to" : "instructionSource",
+                        "key" : "start"
+                    },
+                    {
+                        "to" : "user",
+                        "key" : "currentInput"
+                    }
+                ],
+                "perform" : "confirmLog"
+            }
+        }
     }
 }
