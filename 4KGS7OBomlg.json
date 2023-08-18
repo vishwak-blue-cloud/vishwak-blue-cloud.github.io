@@ -1,22 +1,128 @@
-[
-    {
-        "no" : 0,
-        "instruction" : "Bring the chicken to the room temperature and pat dry the chicken with a paper towel",
-        "video" : "https://yt-audio-bucket.s3.amazonaws.com/vid-0.mp4"
+{
+    "start" : {
+        "instruction" : "Bring the chicken to the room temperature",
+        "askAfter" : 500,
+        "question" : "Did you brought the chicken to the room temperature?",
+        "route" : {
+            "complete" : {
+                "goto" : "1",
+                "key" : "instruction"
+            },
+            "partial" : {
+                "goto" : "start",
+                "key" : "question"
+            },
+            "else" : {
+                "goto" : "start",
+                "key" : "instruction"
+            }
+        },
+        "refer" : {}
     },
-    {
-        "no" : 1,
-        "instruction" : "Mix 1 teaspoon of kosher salt, 1 teaspoon of garlic powder, 1 teaspoon of smoked paprika, 1 spoon of onion powder, half teaspoon of ground black pepper",
-        "video" : "https://yt-audio-bucket.s3.amazonaws.com/vid-1.mp4"
+    "1" : {
+        "instruction" : "Pat dry the chicken with a paper towel",
+        "askAfter" : 700,
+        "question" : "Did you pat dried the chicken with a paper towel?",
+        "route" : {
+            "complete" : {
+                "goto" : "2",
+                "key" : "instruction"
+            },
+            "partial" : {
+                "goto" : "1",
+                "key" : "question"
+            },
+            "else" : {
+                "goto" : "1",
+                "key" : "instruction"
+            }
+        },
+        "refer" : {} 
     },
-    {
-        "no" : 2,
-        "instruction" : "Sprinkle the mixture all over the chicken",
-        "video" : "https://yt-audio-bucket.s3.amazonaws.com/vid-2.mp4"
+    "2" : {
+        "instruction" : "Mix all the spices in a bowl",
+        "askAfter" : 200,
+        "question" : "Did you mix all the spices in a bowl?",
+        "route" : {
+            "done" : {
+                "goto" : "3",
+                "key" : "instruction"
+            },
+            "partial" :{
+                "goto" : "2",
+                "key" : "question" 
+            },
+            "else" : {
+                "goto" : "2",
+                "key" : "instruction"
+            }
+        },
+        "refer" : {
+            "goto" : "reference",
+            "key" : "spices"
+        }
     },
-    {
-        "no" : 3,
+    "3" : {
+        "instruction" : "Sprinkle the spices mixture on the chicken",
+        "askAfter" : 500,
+        "question" : "Did you sprinkled the spices mixture on the chicken?",
+        "route" : {
+            "done" : {
+                "goto" : "4",
+                "key" : "instruction"
+            },
+            "partial" : {
+                "goto" : "3",
+                "key" : "question"
+            },
+            "else" : {
+                "goto" : "3",
+                "key" : "instruction"
+            }
+        },
+        "refer" : {}
+    },
+    "4" : {
         "instruction" : "Cook the chicken in the grill for 35 minutes",
-        "video" : "https://yt-audio-bucket.s3.amazonaws.com/vid-3.mp4"
+        "askAfter" : 1200,
+        "question" : "Did you cook the chicken in the grill for 35 minutes?",
+        "route" : {
+            "done" : {
+                "goto" : "end",
+                "key" : "message"
+            },
+            "partial" : {
+                "goto" : "4",
+                "key" : "question"
+            },
+            "else" : {
+                "goto" : "4",
+                "key" : "instruction"
+            }
+        },
+        "refer" : {}
+    },
+    "end" : {
+        "message" : "The recipe has been successfully completed"
+    },
+    "reference" : {
+        "spices" : [
+            {
+                "no" : 1,
+                "text" : "1 spoon of kosher salt"
+            },
+            {
+                "no" : 2,
+                "text" : "1 spoon of black pepper"
+            },
+            {
+                "no" : 3,
+                "text" : "1 spoon of onion powder"
+            },
+            {
+                "no" : 4,
+                "text" : "1 spoon of red chillie powder"
+            }
+        ]
     }
-]
+}
