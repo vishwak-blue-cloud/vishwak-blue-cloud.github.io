@@ -55,7 +55,18 @@
         ]
     },
     "start" : {
-        "actions" : {
+        "actionsAuto" : {
+            "ask" : {
+                "inputs" : [
+                    {
+                        "to" : "askSource",
+                        "key" : "start"
+                    }
+                ],
+                "perform" : "askUser"
+            }
+        },
+        "actionsManual" : {
             "goto" : {
                 "inputs" : [
                     {
