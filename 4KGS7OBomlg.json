@@ -1,147 +1,94 @@
-{
-    "user" : {
-        "currentInput" : "<Here comes the current input of the user>",
-        "currentInputType" : "<Here comes the current input type[record, timer, play, confirm, query]>",
-        "currentLocation" : "<Here comes the current location of the user>"
-    },
-    "askSource" : {
-        "start" : "Did you bring the chicken to the room temperature and pat dry the chicken",
-        "1" : "Did you mix 1 teaspoon of kosher salt, 1 teaspoon of garlic powder, 1 teaspoon of smoked paprika, 1 spoon of onion powder, half teaspoon of ground black pepper",
-        "2" : "Did you sprinkle the mixture all over the chicken",
-        "3" : "Did you cook the chicken in the grill for 35 minutes"
-    },
-    "timerSource" : {
-        "start" : 0,
-        "1" : 0,
-        "2" : 0,
-        "3" : 2100
-    },
-    "videoSource" : {
-        "start" : "https://yt-audio-bucket.s3.amazonaws.com/vid-0.mp4",
-        "1" : "https://yt-audio-bucket.s3.amazonaws.com/vid-1.mp4",
-        "2" : "https://yt-audio-bucket.s3.amazonaws.com/vid-2.mp4",
-        "3" : "https://yt-audio-bucket.s3.amazonaws.com/vid-3.mp4"
-    },
-    "instructionSource" : {
-        "start" : "Bring the chicken to the room temperature and pat dry the chicken",
-        "1" : "Mix 1 teaspoon of kosher salt, 1 teaspoon of garlic powder, 1 teaspoon of smoked paprika, 1 spoon of onion powder, half teaspoon of ground black pepper",
-        "2" : "Sprinkle the mixture all over the chicken",
-        "3" : "Cook the chicken in the grill for 35 minutes"
-    },
-    "fromToSource" : {
-        "start" : [
-            {
-                "from" : "start",
-                "to" : "1"
+[
+    {
+        "type" : 1,
+        "template" : {
+            "start" : {
+                "instruction" : "Bring the chicken to the room temperature",
+                "ask" : "Did you bring the chicken to the room temperature?",
+                "askAfter" : "300",
+                "additionalInformation" : [],
+                "route" : "1"
+            },
+            "1" : {
+                "instruction" : "Pat dry the chicken with a towel",
+                "ask" : "Did you pat dry the chicken with a towel",
+                "askAfter" : "300",
+                "additionalInformation" : [],
+                "route" : "2"
+            },
+            "2" : {
+                "instruction" : "Mix all the spices",
+                "ask" : "Did you mix all the spices?",
+                "askAfter" : "300",
+                "additionalInformation" : [
+                    "1 teaspoon of kosher salt", 
+                    "1 teaspoon of garlic powder", 
+                    "1 teaspoon of smoked paprika", 
+                    "1 spoon of onion powder", 
+                    "half teaspoon of ground black pepper"
+                ],
+                "route" : "3"
+            },
+            "3" : {
+                "instruction" : "Sprinkle the spices mixture on the chicken",
+                "ask" : "Did you sprinkle the spices mixture on the chicken?",
+                "askAfter" : "300",
+                "additionalInformation" : [],
+                "route" : "4"
+            },
+            "4" : {
+                "instruction" : "Cook the chicken in the grill for 35 minutes",
+                "ask" : "Did you cook the chicken in the grill for 35 minutes?",
+                "askAfter" : "2100",
+                "additionalInformation" : [],
+                "route" : "end"
             }
-        ],
-        "1" : [
-            {
-                "from" : "1",
-                "to" : "2"
-            }
-        ],
-        "2" : [
-            {
-                "from" : "2",
-                "to" : "3"
-            }
-        ],
-        "3" : [
-            {
-                "from" : "3",
-                "to" : "start"
-            }
-        ]
+        }
     },
-    "start" : {
-        "actionsAuto" : {
-            "ask" : {
-                "inputs" : [
-                    {
-                        "to" : "askSource",
-                        "key" : "start"
-                    }
-                ],
-                "perform" : "askUser"
-            }
-        },
-        "actionsManual" : {
-            "goto" : {
-                "inputs" : [
-                    {
-                        "to" : "fromToSource",
-                        "key" : "start"
-                    },
-                    {
-                        "to" : "user",
-                        "key" : "currentInput"
-                    }
-                ],
-                "perform" : "gotoNextStep"
+    {
+        "type" : 2,
+        "template" : {
+            "start" : {
+                "instruction" : "Bring the chicken to the room temperature",
+                "ask" : "Did you bring the chicken to the room temperature?",
+                "askAfter" : "300",
+                "additionalInformation" : [],
+                "route" : "1"
             },
-            "choose" : {
-                "inputs" : [
-                    {
-                        "to" : "fromToSource",
-                        "key" : "start"
-                    }
-                ],
-                "perform" : "chooseNextStep"
+            "1" : {
+                "instruction" : "Pat dry the chicken with a towel",
+                "ask" : "Did you pat dry the chicken with a towel",
+                "askAfter" : "300",
+                "additionalInformation" : [],
+                "route" : "2"
             },
-            "query" : {
-                "inputs" : [
-                    {
-                        "to" : "user",
-                        "key" : "currentInput"
-                    },
-                    {
-                        "to" : "instructionSource",
-                        "key" : "start"
-                    }
+            "2" : {
+                "instruction" : "Mix all the spices",
+                "ask" : "Did you mix all the spices?",
+                "askAfter" : "300",
+                "additionalInformation" : [
+                    "1 teaspoon of kosher salt", 
+                    "1 teaspoon of garlic powder", 
+                    "1 teaspoon of smoked paprika", 
+                    "1 spoon of onion powder", 
+                    "half teaspoon of ground black pepper"
                 ],
-                "perform" : "queryInstruction"
+                "route" : "3"
             },
-            "record" : {
-                "inputs" : [
-                    {
-                        "to" : "user",
-                        "key" : "currentInput"
-                    }
-                ],
-                "perform" : "recordLog"
+            "3" : {
+                "instruction" : "Sprinkle the spices mixture on the chicken",
+                "ask" : "Did you sprinkle the spices mixture on the chicken?",
+                "askAfter" : "300",
+                "additionalInformation" : [],
+                "route" : "4"
             },
-            "timer" : {
-                "inputs" : [
-                    {
-                        "to" : "timerSource",
-                        "key" : "start"
-                    }
-                ],
-                "perform" : "startTimer"
-            },
-            "play" : {
-                "inputs" : [
-                    {
-                        "to" : "videoSource",
-                        "key" : "start"
-                    }
-                ],
-                "perform" : "playVideo"
-            },
-            "confirm" : {
-                "inputs" : [
-                    {
-                        "to" : "instructionSource",
-                        "key" : "start"
-                    },
-                    {
-                        "to" : "user",
-                        "key" : "currentInput"
-                    }
-                ],
-                "perform" : "confirmLog"
+            "4" : {
+                "instruction" : "Cook the chicken in the grill for 30 minutes",
+                "ask" : "Did you cook the chicken in the grill for 30 minutes?",
+                "askAfter" : "1800",
+                "additionalInformation" : [],
+                "route" : "end"
             }
         }
     }
-}
+]
