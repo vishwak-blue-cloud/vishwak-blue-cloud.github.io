@@ -1,7 +1,7 @@
 {
     "user" : {
         "currentInput" : "<Here comes the current input of the user>",
-        "currentInputType" : "<Here comes the current input type[record, timer, play, confirm, query, goto]>",
+        "currentInputType" : "<Here comes the current input type[record, timer, play, confirm, query]>",
         "currentLocation" : "<Here comes the current location of the user>"
     },
     "timerSource" : {
@@ -29,26 +29,28 @@
         "actions" : {
             "goto" : {
                 "inputs" : [
-                    [
-                        {
-                            "to" : "fromToSource",
-                            "key" : "start"
-                        }
-                    ],
-                    [
-                        {
-                            "to" : "user",
-                            "key" : "currentInput"
-                        }
-                    ]
+                    {
+                        "to" : "fromToSource",
+                        "key" : "start"
+                    },
+                    {
+                        "to" : "user",
+                        "key" : "currentInput"
+                    }
                 ],
-                "perform" : [
-                    "chooseInstruction",
-                    "gotoInstruction"
-                ]
+                "perform" : "gotoNextStep"
+            },
+            "choose" : {
+                "inputs" : [
+                    {
+                        "to" : "fromToSource",
+                        "key" : "start"
+                    }
+                ],
+                "perform" : "chooseNextStep"
             },
             "query" : {
-                "inputs" : [[
+                "inputs" : [
                     {
                         "to" : "user",
                         "key" : "currentInput"
@@ -57,46 +59,38 @@
                         "to" : "instructionSource",
                         "key" : "start"
                     }
-                ]],
-                "perform" : [
-                    "queryInstruction"
-                ]
+                ],
+                "perform" : "queryInstruction"
             },
             "record" : {
-                "inputs" : [[
+                "inputs" : [
                     {
                         "to" : "user",
                         "key" : "currentInput"
                     }
-                ]],
-                "perform" : [
-                    "recordLog"
-                ]
+                ],
+                "perform" : "recordLog"
             },
             "timer" : {
-                "inputs" : [[
+                "inputs" : [
                     {
                         "to" : "timerSource",
                         "key" : "start"
                     }
-                ]],
-                "perform" : [
-                    "startTimer"
-                ]
+                ],
+                "perform" : "startTimer"
             },
             "play" : {
-                "inputs" : [[
+                "inputs" : [
                     {
                         "to" : "videoSource",
                         "key" : "start"
                     }
-                ]],
-                "perform" : [
-                    "playVideo"
-                ]
+                ],
+                "perform" : "playVideo"
             },
             "confirm" : {
-                "inputs" : [[
+                "inputs" : [
                     {
                         "to" : "instructionSource",
                         "key" : "start"
@@ -105,10 +99,8 @@
                         "to" : "user",
                         "key" : "currentInput"
                     }
-                ]],
-                "perform" : [
-                    "confirmLog"
-                ]
+                ],
+                "perform" : "confirmLog"
             }
         }
     },
