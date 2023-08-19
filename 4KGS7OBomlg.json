@@ -5,26 +5,46 @@
         "currentLocation" : "<Here comes the current location of the user>"
     },
     "timerSource" : {
-        "start" : 300
+        "start" : 0,
+        "1" : 0,
+        "2" : 0,
+        "3" : 2100
     },
     "videoSource" : {
-        "start" : "/here/comes/the/source.mp4"
+        "start" : "https://yt-audio-bucket.s3.amazonaws.com/vid-0.mp4",
+        "1" : "https://yt-audio-bucket.s3.amazonaws.com/vid-1.mp4",
+        "2" : "https://yt-audio-bucket.s3.amazonaws.com/vid-2.mp4",
+        "3" : "https://yt-audio-bucket.s3.amazonaws.com/vid-3.mp4"
     },
     "instructionSource" : {
-        "start" : {
-            "instruction" : "Deep fry the potatoes for 5 minutes",
-            "ask" : "Did you deep fry the potatoes for 5 minutes?"
-        }
+        "start" : "Bring the chicken to the room temperature and pat dry the chicken",
+        "1" : "Mix 1 teaspoon of kosher salt, 1 teaspoon of garlic powder, 1 teaspoon of smoked paprika, 1 spoon of onion powder, half teaspoon of ground black pepper",
+        "2" : "Sprinkle the mixture all over the chicken",
+        "3" : "Cook the chicken in the grill for 35 minutes"
     },
     "fromToSource" : {
         "start" : [
             {
                 "from" : "start",
                 "to" : "1"
-            },
+            }
+        ],
+        "1" : [
             {
-                "from" : "start",
+                "from" : "1",
                 "to" : "2"
+            }
+        ],
+        "2" : [
+            {
+                "from" : "2",
+                "to" : "3"
+            }
+        ],
+        "3" : [
+            {
+                "from" : "3",
+                "to" : "start"
             }
         ]
     },
@@ -106,9 +126,5 @@
                 "perform" : "confirmLog"
             }
         }
-    },
-    "1" : {},
-    "2" : {},
-    "3" : {},
-    "end" : {}
+    }
 }
