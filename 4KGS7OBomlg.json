@@ -4,6 +4,12 @@
         "currentInputType" : "<Here comes the current input type[record, timer, play, confirm, query]>",
         "currentLocation" : "<Here comes the current location of the user>"
     },
+    "askSource" : {
+        "start" : "Did you bring the chicken to the room temperature and pat dry the chicken",
+        "1" : "Did you mix 1 teaspoon of kosher salt, 1 teaspoon of garlic powder, 1 teaspoon of smoked paprika, 1 spoon of onion powder, half teaspoon of ground black pepper",
+        "2" : "Did you sprinkle the mixture all over the chicken",
+        "3" : "Did you cook the chicken in the grill for 35 minutes"
+    },
     "timerSource" : {
         "start" : 0,
         "1" : 0,
