@@ -11,7 +11,10 @@
         "start" : "/here/comes/the/source.mp4"
     },
     "instructionSource" : {
-        "start" : "Deep fry the potatoes for 5 minutes"
+        "start" : {
+            "instruction" : "Deep fry the potatoes for 5 minutes",
+            "ask" : "Did you deep fry the potatoes for 5 minutes?"
+        }
     },
     "fromToSource" : {
         "start" : [
