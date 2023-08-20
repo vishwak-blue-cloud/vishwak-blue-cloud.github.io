@@ -3,6 +3,7 @@
         "instruction" : "Bring the chicken to the room temperature and pat dry the chicken with a towel",
         "ask" : "Did you brought the chicken to the room temperature and pat dried the chicken with a towel?",
         "askAfter" : 300,
+        "videoSource" : "https://yt-audio-bucket.s3.amazonaws.com/vid-0.mp4",
         "additionalInformation" : [],
         "path" : {
             "next" : "2",
@@ -13,6 +14,7 @@
         "instruction" : "Mix all the spices",
         "ask" : "Did you mix all the spices?",
         "askAfter" : 300,
+        "videoSource" : "https://yt-audio-bucket.s3.amazonaws.com/vid-1.mp4",
         "additionalInformation" : [
             "1 teaspoon of kosher salt", 
             "1 teaspoon of garlic powder", 
@@ -29,6 +31,7 @@
         "instruction" : "Sprinkle the spices mixture on the chicken",
         "ask" : "Did you sprinkle the spices mixture on the chicken?",
         "askAfter" : 300,
+        "videoSource" : "https://yt-audio-bucket.s3.amazonaws.com/vid-2.mp4",
         "additionalInformation" : [],
         "path" : {
             "next" : "4",
@@ -39,6 +42,7 @@
         "instruction" : "Cook the chicken in the grill for 35 minutes",
         "ask" : "Did you cook the chicken in the grill for 35 minutes?",
         "askAfter" : 2100,
+        "videoSource" : "https://yt-audio-bucket.s3.amazonaws.com/vid-3.mp4",
         "additionalInformation" : [],
         "path" : {
             "next" : null,
