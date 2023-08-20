@@ -1,94 +1,59 @@
-[
-    {
-        "type" : 1,
-        "template" : {
-            "start" : {
-                "instruction" : "Bring the chicken to the room temperature",
-                "ask" : "Did you bring the chicken to the room temperature?",
-                "askAfter" : "300",
-                "additionalInformation" : [],
-                "route" : "1"
-            },
-            "1" : {
-                "instruction" : "Pat dry the chicken with a towel",
-                "ask" : "Did you pat dry the chicken with a towel",
-                "askAfter" : "300",
-                "additionalInformation" : [],
-                "route" : "2"
-            },
-            "2" : {
-                "instruction" : "Mix all the spices",
-                "ask" : "Did you mix all the spices?",
-                "askAfter" : "300",
-                "additionalInformation" : [
-                    "1 teaspoon of kosher salt", 
-                    "1 teaspoon of garlic powder", 
-                    "1 teaspoon of smoked paprika", 
-                    "1 spoon of onion powder", 
-                    "half teaspoon of ground black pepper"
-                ],
-                "route" : "3"
-            },
-            "3" : {
-                "instruction" : "Sprinkle the spices mixture on the chicken",
-                "ask" : "Did you sprinkle the spices mixture on the chicken?",
-                "askAfter" : "300",
-                "additionalInformation" : [],
-                "route" : "4"
-            },
-            "4" : {
-                "instruction" : "Cook the chicken in the grill for 35 minutes",
-                "ask" : "Did you cook the chicken in the grill for 35 minutes?",
-                "askAfter" : "2100",
-                "additionalInformation" : [],
-                "route" : "end"
-            }
-        }
+{
+    "start" : {
+        "instruction" : "Bring the chicken to the room temperature",
+        "ask" : "Did you bring the chicken to the room temperature?",
+        "askAfter" : "300",
+        "additionalInformation" : [],
+        "route" : [
+            "1"
+        ]
     },
-    {
-        "type" : 2,
-        "template" : {
-            "start" : {
-                "instruction" : "Bring the chicken to the room temperature",
-                "ask" : "Did you bring the chicken to the room temperature?",
-                "askAfter" : "300",
-                "additionalInformation" : [],
-                "route" : "1"
-            },
-            "1" : {
-                "instruction" : "Pat dry the chicken with a towel",
-                "ask" : "Did you pat dry the chicken with a towel",
-                "askAfter" : "300",
-                "additionalInformation" : [],
-                "route" : "2"
-            },
-            "2" : {
-                "instruction" : "Mix all the spices",
-                "ask" : "Did you mix all the spices?",
-                "askAfter" : "300",
-                "additionalInformation" : [
-                    "1 teaspoon of kosher salt", 
-                    "1 teaspoon of garlic powder", 
-                    "1 teaspoon of smoked paprika", 
-                    "1 spoon of onion powder", 
-                    "half teaspoon of ground black pepper"
-                ],
-                "route" : "3"
-            },
-            "3" : {
-                "instruction" : "Sprinkle the spices mixture on the chicken",
-                "ask" : "Did you sprinkle the spices mixture on the chicken?",
-                "askAfter" : "300",
-                "additionalInformation" : [],
-                "route" : "4"
-            },
-            "4" : {
-                "instruction" : "Cook the chicken in the grill for 30 minutes",
-                "ask" : "Did you cook the chicken in the grill for 30 minutes?",
-                "askAfter" : "1800",
-                "additionalInformation" : [],
-                "route" : "end"
-            }
-        }
+    "1" : {
+        "instruction" : "Pat dry the chicken with a towel",
+        "ask" : "Did you pat dry the chicken with a towel?",
+        "askAfter" : "300",
+        "additionalInformation" : [],
+        "route" : [
+            "2"
+        ]
+    },
+    "2" : {
+        "instruction" : "Mix all the spices",
+        "ask" : "Did you mix all the spices?",
+        "askAfter" : "300",
+        "additionalInformation" : [
+            "1 teaspoon of kosher salt", 
+            "1 teaspoon of garlic powder", 
+            "1 teaspoon of smoked paprika", 
+            "1 spoon of onion powder", 
+            "half teaspoon of ground black pepper"
+        ],
+        "route" : [
+            "3"
+        ]
+    },
+    "3" : {
+        "instruction" : "Sprinkle the spices mixture on the chicken",
+        "ask" : "Did you sprinkle the spices mixture on the chicken?",
+        "askAfter" : "300",
+        "additionalInformation" : [],
+        "route" : [
+            "4",
+            "5"
+        ]
+    },
+    "4" : {
+        "instruction" : "Cook the chicken in the grill for 35 minutes",
+        "ask" : "Did you cook the chicken in the grill for 35 minutes?",
+        "askAfter" : "2100",
+        "additionalInformation" : [],
+        "route" : []
+    },
+    "5" : {
+        "instruction" : "Cook the chicken in the grill for 30 minutes",
+        "ask" : "Did you cook the chicken in the grill for 30 minutes?",
+        "askAfter" : "2100",
+        "additionalInformation" : [],
+        "route" : []
     }
-]
+}
