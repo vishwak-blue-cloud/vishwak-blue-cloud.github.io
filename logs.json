@@ -1,14 +1,22 @@
 [
     {
         "no" : 0,
-        "text" : "I did the step"
+        "text" : "I did the step",
+        "type" : "confirmation"
     },
     {
         "no" : 1,
-        "text" : "Pat dried the chicken"
+        "text" : "Which towel should I use to pat dry the chicken?",
+        "type" : "question"
     },
     {
         "no" : 2,
-        "text" : "I mixed all the spices"
+        "text" : "Pat dried the chicken",
+        "type" : "confirmation"
+    },
+    {
+        "no" : 3,
+        "text" : "I mixed all the spices",
+        "type" : "confirmation"
     }
 ]
