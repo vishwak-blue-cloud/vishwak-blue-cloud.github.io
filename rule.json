@@ -1,0 +1,76 @@
+[
+    {
+        "no" : 1,
+        "name" : "confirm",
+        "move" : true,
+        "api" : {
+            "bot" : {
+                "method" : "post",
+                "url" : "https://www.xyz.com/confirm",
+                "type" : "application/json",
+                "parameters" : [
+                    {
+                        "name" : "userInput",
+                        "type" : "string"
+                    },
+                    {
+                        "name" : "instanceId",
+                        "type" : "string"
+                    },
+                    {
+                        "name" : "currentInstruction",
+                        "type" : "string"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "no" : 2,
+        "name" : "clarify",
+        "move" : false,
+        "bot" : {
+            "method" : "post",
+            "url" : "https://www.xyz.com/clarify",
+            "type" : "application/json",
+            "parameters" : [
+                {
+                    "name" : "userInput",
+                    "type" : "string"
+                },
+                {
+                    "name" : "instanceId",
+                    "type" : "string"
+                },
+                {
+                    "name" : "currentInstruction",
+                    "type" : "string"
+                }
+            ]
+        }
+    },
+    {
+        "no" : 3,
+        "name" : "query",
+        "move" : false,
+        "bot" : {
+            "method" : "post",
+            "url" : "https://www.xyz.com/query",
+            "type" : "application/json",
+            "parameters" : [
+                {
+                    "name" : "userInput",
+                    "type" : "string"
+                },
+                {
+                    "name" : "instanceId",
+                    "type" : "string"
+                },
+                {
+                    "name" : "currentInstruction",
+                    "type" : "string"
+                }
+            ]
+        }
+    }
+]
