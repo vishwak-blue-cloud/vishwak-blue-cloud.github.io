@@ -18,7 +18,7 @@
                         "type" : "string"
                     },
                     {
-                        "name" : "instanceLocationUrl",
+                        "name" : "currentInstruction",
                         "type" : "string"
                     }
                 ]
@@ -43,7 +43,7 @@
                     "type" : "string"
                 },
                 {
-                    "name" : "instanceLocationUrl",
+                    "name" : "currentInstruction",
                     "type" : "string"
                 }
             ]
@@ -67,7 +67,7 @@
                     "type" : "string"
                 },
                 {
-                    "name" : "instanceLocationUrl",
+                    "name" : "currentInstruction",
                     "type" : "string"
                 }
             ]
